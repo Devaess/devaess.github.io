@@ -874,6 +874,10 @@
   document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('unifiedExitBtn').onclick = () => openPage('mainContent');
     document.getElementById('utkBtn').onclick = () => openPage('utk', 'utk');
+
+    document.getElementById('menuExitBtn').onclick = () => {
+      window.close();
+      setTimeout(() => alert('Пожалуйста, закройте вкладку вручную.'), 100);
     };
   });
 </script>
